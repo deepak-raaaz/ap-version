@@ -1,4 +1,3 @@
-import React from "react";
 import LogoImg from "../assets/images/logo-horizontal.png";
 import { Link, useLocation } from "react-router-dom";
 import { navBarLinks, socialLinks } from "@/constants";
@@ -16,9 +15,7 @@ import { FaPhoneAlt } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import { BiMenu } from "react-icons/bi";
 
-type Props = {};
-
-const NavBar = (props: Props) => {
+const NavBar = () => {
   let location = useLocation();
   const pathname = location.pathname;
 

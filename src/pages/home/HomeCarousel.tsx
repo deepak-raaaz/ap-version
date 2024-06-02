@@ -1,4 +1,3 @@
-import * as React from "react";
 import Autoplay from "embla-carousel-autoplay"
 import SliderImg from "../../assets/images/Slider-1.png"
 import {

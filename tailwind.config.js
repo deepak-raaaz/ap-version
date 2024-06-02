@@ -18,6 +18,7 @@ module.exports = {
     },
     extend: {
       fontFamily: {
+        poppins: ['Poppins', 'sans-serif'],
         dmSans: ['DM Sans', 'sans-serif'],
         UpBoltersNew: ['UpBolters New', 'sans-serif']
       },
@@ -55,7 +56,7 @@ module.exports = {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
-        //custom added
+        //custom added color
         brand: {
           primary: "#053A6D",
         }
@@ -81,7 +82,8 @@ module.exports = {
       },
       aspectRatio:{
         'slider': '1440 / 653',
-      }
+      },
+      display: ["group-hover"],
     },
   },
   plugins: [require("tailwindcss-animate")],
