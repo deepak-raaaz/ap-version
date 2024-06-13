@@ -59,6 +59,7 @@ module.exports = {
         //custom added color
         brand: {
           primary: "#053A6D",
+          darkPrimary: "#1D5B93"
         }
       },
       borderRadius: {
@@ -84,6 +85,25 @@ module.exports = {
         'slider': '1440 / 653',
       },
       display: ["group-hover"],
+      backgroundImage: {
+        'contact-image': "url('/src/assets/images/pattern-image.png')",
+        'secondary-banner-image': "url('/src/assets/images/secondary-banner.png')",
+        'circle-image': "url('/src/assets/images/circle.png')",
+      },
+      animation: {
+        marquee: 'marquee 25s linear infinite',
+        marquee2: 'marquee2 25s linear infinite',
+      },
+      keyframes: {
+        marquee: {
+          '0%': { transform: 'translateX(0%)' },
+          '100%': { transform: 'translateX(-100%)' },
+        },
+        marquee2: {
+          '0%': { transform: 'translateX(100%)' },
+          '100%': { transform: 'translateX(0%)' },
+        },
+      },
     },
   },
   plugins: [require("tailwindcss-animate")],

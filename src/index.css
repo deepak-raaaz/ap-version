@@ -3,7 +3,7 @@
 
 @font-face {
   font-family: 'UpBolters New'; /*a name to be used later*/
-  src: url('/src/assets/font/UPBOLTERS\ New-Regular.otf'); /*URL to font*/
+  src: url('/src/assets/font/New-Regular.otf'); /*URL to font*/
 }
 
 @tailwind base;

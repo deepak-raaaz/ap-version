@@ -5,12 +5,11 @@ import { Link } from "react-router-dom";
 import { FaPhone } from "react-icons/fa6";
 import { IoLogoWhatsapp } from "react-icons/io";
 
-type Props = {};
 
-const ProductCard = (props: Props) => {
+const ProductCard = () => {
   return (
     <div className="relative group">
-      <div className="border-slate-300 border-2 group-hover:border-brand-primary group-hover:border-3 transition duration-300 rounded-lg pt-8 pb-10 px-4 flex flex-col items-center">
+      <div className="border-slate-300 dark:border-slate-600 border-2 group-hover:border-brand-primary dark:group-hover:border-brand-darkPrimary group-hover:border-3 transition duration-300 rounded-lg pt-8 pb-10 px-4 flex flex-col items-center">
         <img
           src={ProductImg1}
           alt=""
@@ -24,17 +23,17 @@ const ProductCard = (props: Props) => {
         <h3 className="text-lg text-center font-medium group-hover:font-bold">
           Birla Gold Waterproof Cement Paint
         </h3>
-        <p className="text-lg font-semibold text-brand-primary">20 kg</p>
+        <p className="text-lg font-semibold text-brand-primary dark:text-brand-darkPrimary">20 kg</p>
       </div>
       <div className="absolute -bottom-4 left-1/2 transform -translate-x-1/2 ">
         <Button
           variant="outline"
-          className="border-slate-300 border-2 rounded-full text-base px-8 py-5 group-hover:border-brand-primary"
+          className="border-slate-300 dark:border-slate-600 border-2 rounded-full text-base px-8 py-5 group-hover:border-brand-primary dark:group-hover:border-brand-darkPrimary"
         >
           View Details
         </Button>
       </div>
-      <div className="absolute bg-brand-primary w-full h-14 items-center top-[55%] hidden group-hover:flex justify-center transition duration-300">
+      <div className="absolute bg-brand-primary dark:bg-brand-darkPrimary w-full h-14 items-center top-[55%] hidden group-hover:flex justify-center transition duration-300">
         <div className="flex items-center justify-center">
           <Link to="/">
             <FaPhone className="text-white" size={20} />

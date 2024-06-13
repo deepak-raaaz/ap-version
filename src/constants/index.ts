@@ -79,3 +79,10 @@ export const featuresList = [
     description: "Seamless surfaces, touch of perfection achieved",
   }
 ]
+
+export const textList = [
+  "Shielding your walls from moisture, our wall putty stands tall",
+  "Crafted with precision and care, our wall putty exudes quality.",
+  "Enduring the test of time, our wall putty promises longevity",
+  "Like a gentle brushstroke, our wall putty delivers a smooth finish."
+]
