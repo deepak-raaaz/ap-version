@@ -2,13 +2,14 @@
 type Props = {
     text1?: string;
     text2?: string;
+    reverse?:boolean;
 };
 
-const Heading = ({text1, text2}:Props) => {
+const Heading = ({text1, text2,reverse}:Props) => {
   return (
-    <div className="space-y-1">
-      <h2 className="uppercase font-bold font-poppins text-2xl">
-        <span className="text-brand-primary">{text1}</span> {text2}
+    <div className={`space-y-1 flex flex-col ${reverse ? "items-center" : ""}`}>
+      <h2 className={`uppercase font-bold font-poppins text-2xl ${reverse ? "text-brand-primary" : "text-slate-900"}`}>
+        <span className={`${reverse ? "text-slate-900" : "text-brand-primary"}`}>{text1}</span> {text2}
       </h2>
       <svg
         width="42"

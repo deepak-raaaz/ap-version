@@ -5,10 +5,10 @@ import { HomeCarousel } from "./HomeCarousel"
 import ContactForm from "./ContactForm"
 import BigBannerSection from "./BigBannerSection"
 import ProductIntroSection from "./ProductIntroSection"
-// import BlogSection from "./BlogSection"
-// import ContactSection from "./ContactSection"
-// import InstagramPost from "./InstagramPost"
-// import OurPartnerSection from "./OurPartnerSection"
+import BlogSection from "./BlogSection"
+import ContactSection from "./ContactSection"
+import InstagramPost from "./InstagramPost"
+import OurPartnerSection from "./OurPartnerSection"
 
 const Home = () => {
   return (
@@ -20,10 +20,10 @@ const Home = () => {
       <BannerSection/>
       <BigBannerSection/>
       <ProductIntroSection/>
-      {/* <OurPartnerSection/>
+      <OurPartnerSection/>
       <BlogSection/>
       <ContactSection/>
-      <InstagramPost/> */}
+      <InstagramPost/>
     </div>
   )
 }

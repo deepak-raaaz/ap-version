@@ -104,6 +104,10 @@ module.exports = {
           '100%': { transform: 'translateX(0%)' },
         },
       },
+      screens: {
+        '900px' : '900px',
+        '420px' : '420px'
+      }
     },
   },
   plugins: [require("tailwindcss-animate")],
