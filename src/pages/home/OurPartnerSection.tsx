@@ -8,8 +8,8 @@ import Partner6Img from "../../assets/images/partner6.png";
 
 const OurPartnerSection = () => {
   return (
-    <section className="bg-gray-200">
-      <div className="max-w-screen-xl mx-auto max-xl:mx-4 py-10 flex items-center flex-col space-y-8">
+    <section className="bg-gray-200 overflow-hidden">
+      <div className="max-w-screen-xl mx-auto max-xl:mx-4 py-10 flex items-center flex-col space-y-8 ">
       <Heading text1="Our" text2="Dealers" reverse={true}/>
       <div className="flex space-x-10">
         <img src={Partner1Img} alt="" />
