@@ -8,7 +8,7 @@ const ContactSection = () => {
     <section className="max-w-screen-xl mx-auto max-xl:mx-4 py-10 flex items-center flex-col space-y-8">
       <Heading text1="Contact" text2="us" reverse={true} />
       <div className="grid grid-cols-3 gap-10 w-full max-md:grid-cols-2 max-sm:grid-cols-1 max-md:gap-3">
-        <div className="bg-blue-100 px-8 py-8 w-full flex items-center space-x-5 cursor-pointer">
+        <div className="bg-blue-100 dark:bg-slate-950 px-8 py-8 w-full flex items-center space-x-5 cursor-pointer">
           <div className="bg-brand-primary p-4 rounded-full text-white ">
             <FaPhone size={30} />
           </div>
@@ -18,7 +18,7 @@ const ContactSection = () => {
           </span>
         </div>
 
-        <div className="bg-blue-100 px-8 py-8 w-full flex items-center space-x-5 cursor-pointer">
+        <div className="bg-blue-100 dark:bg-slate-950 px-8 py-8 w-full flex items-center space-x-5 cursor-pointer">
           <div className="bg-brand-primary p-4 rounded-full text-white ">
             <BsEnvelopeAtFill size={30} />
           </div>
@@ -28,7 +28,7 @@ const ContactSection = () => {
           </span>
         </div>
 
-        <div className="bg-blue-100 px-8 py-8 w-full flex items-center space-x-5 cursor-pointer">
+        <div className="bg-blue-100 dark:bg-slate-950 px-8 py-8 w-full flex items-center space-x-5 cursor-pointer">
           <div className="bg-brand-primary p-4 rounded-full text-white ">
             <FaLocationDot size={30} />
           </div>

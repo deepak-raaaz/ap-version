@@ -6,7 +6,7 @@ type Props = {}
 
 const BlogCard = (props: Props) => {
   return (
-    <div className="bg-white rounded-xl shadow-lg overflow-hidden p-2 cursor-pointer">
+    <div className="bg-white rounded-xl shadow-lg overflow-hidden p-2 cursor-pointer dark:bg-slate-950">
           <img
             src={BlogImage}
             alt=""
@@ -25,9 +25,9 @@ const BlogCard = (props: Props) => {
             </Badge>
           </div>
           <h2 className="text-lg font-semibold mx-2 !mt-2">Heading 1</h2>
-          <p className="text-slate-700 mx-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus faucibus sit sit facilisis dictumst.</p>
+          <p className="text-slate-700 mx-2 dark:text-slate-500">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus faucibus sit sit facilisis dictumst.</p>
           <div className="flex justify-end mx-2">
-          <Button variant="secondary" className="border-blue-400 border text-blue-500 bg-blue-100 my-2">Read more</Button>
+          <Button variant="secondary" className="border-blue-400 border text-blue-500 bg-blue-100 my-2 dark:bg-slate-900 dark:border-blue-800 dark:hover:bg-slate-800">Read more</Button>
           </div>
         </div>
   )

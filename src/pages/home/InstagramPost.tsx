@@ -3,7 +3,7 @@ import Post from "../../assets/images/apversion_post.jpg";
 
 const InstagramPost = () => {
   return (
-    <section className="flex items-center flex-col space-y-4 overflow-hidden py-10">
+    <section className="flex items-center flex-col space-y-4 overflow-hidden pt-10">
       <div className="flex items-center space-x-2">
         <FaInstagram size={30} className="" />
         <h1>Follow us on Instagram</h1>
