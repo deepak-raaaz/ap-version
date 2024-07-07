@@ -2,10 +2,22 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import MessageIcon from "../../assets/images/icon-envelope.png";
+import { useEffect } from "react";
+import AOS from 'aos'
+import 'aos/dist/aos.css'
+
 const ContactForm = () => {
+  useEffect(() => {
+    AOS.init({
+      offset: 200,
+      duration: 400,
+      easing: 'ease-in-sine',
+      delay: 100,
+    });
+  }, [])
   return (
     <div className="max-w-screen-xl mx-auto max-xl:mx-4 my-10 py-14 max-md:grid-cols-1 max-md:px-8 max-md:py-8 pb-16 bg-brand-primary bg-contact-image grid grid-cols-2 gap-12 px-16 bg-no-repeat">
-      <div className="text-white">
+      <div data-aos="zoom-in-right" className="text-white">
         <h2 className="font-bold text-2xl uppercase">Get in touch</h2>
         <p className="mt-4">
           Have a question or need assistance? Reach out to us using the contact
@@ -22,7 +34,7 @@ const ContactForm = () => {
           <li>Address: Patna, Bihar- 800001</li>
         </ul>
       </div>
-      <div className="bg-white dark:bg-slate-900 px-12 py-10 rounded-lg relative max-md:px-8 max-md:py-8">
+      <div data-aos="zoom-in-left" className="bg-white dark:bg-slate-900 px-12 py-10 rounded-lg relative max-md:px-8 max-md:py-8">
         <form action="">
           <Input
             type="name"

@@ -10,10 +10,22 @@ import {
   DialogTrigger,
 } from "@/components/ui/dialog";
 import ProductDetails from "./ProductDetails";
+import AOS from 'aos'
+import 'aos/dist/aos.css'
+import { useEffect } from "react";
 
 const ProductCard = () => {
+  useEffect(() => {
+    AOS.init({
+      offset: 300,
+      duration: 600,
+      easing: 'ease-in-sine',
+      delay: 100,
+    });
+  }, [])
+
   return (
-    <div className="relative group">
+    <div className="relative group" data-aos="flip-left">
       <div className="border-slate-300 dark:border-slate-600 border-2 group-hover:border-brand-primary dark:group-hover:border-brand-darkPrimary group-hover:border-3 transition duration-300 rounded-lg pt-8 pb-10 px-4 flex flex-col items-center">
         <img
           src={ProductImg1}

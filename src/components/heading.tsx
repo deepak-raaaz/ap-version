@@ -1,3 +1,6 @@
+import AOS from 'aos'
+import 'aos/dist/aos.css'
+import { useEffect } from 'react';
 
 type Props = {
     text1?: string;
@@ -6,8 +9,16 @@ type Props = {
 };
 
 const Heading = ({text1, text2,reverse}:Props) => {
+  useEffect(() => {
+    AOS.init({
+      offset: 50,
+      duration: 400,
+      easing: 'ease-in-sine',
+      delay: 100,
+    });
+  }, [])
   return (
-    <div className={`space-y-1 flex flex-col ${reverse ? "items-center" : ""}`}>
+    <div data-aos="zoom-in" className={`space-y-1 flex flex-col ${reverse ? "items-center" : ""}`}>
       <h2 className={`uppercase font-bold font-poppins text-2xl ${reverse ? "text-brand-primary dark:text-blue-600" : "text-slate-900 dark:text-slate-300"}`}>
         <span className={`${reverse ? "text-slate-900 dark:text-slate-300" : "text-brand-primary dark:text-blue-600"}`}>{text1}</span> {text2}
       </h2>
