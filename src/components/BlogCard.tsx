@@ -1,10 +1,21 @@
 import { Badge } from './ui/badge'
 import { Button } from './ui/button'
 import BlogImage from "../assets/images/blog-image.png";
+import { useEffect } from 'react';
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 
 const BlogCard = () => {
+  useEffect(() => {
+    AOS.init({
+      offset: 200,
+      duration: 400,
+      easing: 'ease-in-sine',
+      delay: 100,
+    });
+  }, [])
   return (
-    <div className="bg-white rounded-xl shadow-lg overflow-hidden p-2 cursor-pointer dark:bg-slate-950">
+    <div data-aos="zoom-in" className="bg-white rounded-xl shadow-lg overflow-hidden p-2 cursor-pointer dark:bg-slate-950">
           <img
             src={BlogImage}
             alt=""
