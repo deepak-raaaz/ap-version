@@ -2,9 +2,7 @@ import { Badge } from './ui/badge'
 import { Button } from './ui/button'
 import BlogImage from "../assets/images/blog-image.png";
 
-type Props = {}
-
-const BlogCard = (props: Props) => {
+const BlogCard = () => {
   return (
     <div className="bg-white rounded-xl shadow-lg overflow-hidden p-2 cursor-pointer dark:bg-slate-950">
           <img

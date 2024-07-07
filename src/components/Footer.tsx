@@ -51,7 +51,7 @@ const Footer = () => {
         <div>
           <h3 className="font-semibold">Follow us on</h3>
           <div className="flex items-center my-3">
-            {socialLinks.map((link, index) => (
+            {socialLinks.map((link) => (
               <div
                 className="flex items-center p-2 aspect-square rounded-full border border-slate-300 dark:border-slate-600 me-2 hover:bg-blue-600 hover:text-white"
                 key={link.label}

@@ -15,7 +15,7 @@ const ProductIntroSection = () => {
   const [api, setApi] = React.useState<CarouselApi>();
   const [current, setCurrent] = React.useState(0);
   const [count, setCount] = React.useState(0);
-
+  
   React.useEffect(() => {
     if (!api) {
       return;
@@ -44,7 +44,7 @@ const ProductIntroSection = () => {
             Waterproof Cement Paint is the ultimate solution for protecting and
             enhancing your walls. Crafted with precision and expertise, this
             paint offers a seamless finish that withstands the test of time,
-            leaving your walls with a radiant glow for years to come.
+            leaving your walls with a radiant glow for years to come. {current} {count}
           </p>
           <h4 className="text-lg font-medium mt-3 dark:text-slate-500">Key Features:</h4>
           <ul className="list-disc ms-4 mt-1 dark:text-slate-500">
