@@ -74,7 +74,7 @@ const NavBar = () => {
                   to={link.route}
                   key={link.label}
                   className={cn(
-                    "text-brand-primary font-semibold hover:underline underline-offset-4 transition duration-200",
+                    "text-brand-primary font-semibold hover:underline underline-offset-4 transition duration-200 dark:text-slate-100",
                     { "underline underline-offset-4": isActive }
                   )}
                 >
@@ -109,7 +109,7 @@ const NavBar = () => {
                       to={link.route}
                       key={link.label}
                       className={cn(
-                        "text-brand-primary font-semibold hover:underline underline-offset-4 transition duration-200",
+                        "text-brand-primary font-semibold hover:underline underline-offset-4 transition duration-200 dark:text-slate-400",
                         { "underline underline-offset-4": isActive }
                       )}
                     >
@@ -121,9 +121,8 @@ const NavBar = () => {
               <div>
               <ModeToggle />
               </div>
-              <SheetDescription>
-                This action cannot be undone. This will permanently delete your
-                account and remove your data from our servers.
+              <SheetDescription className="flex justify-center pt-5">
+              © 2024 AP Version Paint Industry.
               </SheetDescription>
             </SheetHeader>
           </SheetContent>
