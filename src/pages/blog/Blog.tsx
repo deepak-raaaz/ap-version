@@ -1,8 +1,12 @@
 import BlogCard from "@/components/BlogCard";
 import Heading from "@/components/heading";
 import { blogs } from "@/constants";
+import { useEffect } from "react";
 
 const Blog = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
   return (
     <section className="max-w-screen-xl mx-auto max-xl:mx-4 pb-10 flex items-center flex-col space-y-8 pt-32 max-lg:pt-1 ">
       <Heading text1="BLOGS" text2="ARTICLES" reverse={true} />

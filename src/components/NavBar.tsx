@@ -27,14 +27,16 @@ const NavBar = () => {
             <div className="flex items-center text-white text-sm">
               <FaPhoneAlt className="me-3 max-sm:me-0" size={16} />
               <span className="max-sm:hidden">Call us &nbsp;</span>
-              <span className="font-bold max-sm:hidden">+91 7324907150</span>
+              <span className="font-bold max-sm:hidden">
+                <a href="tel:+917324907150">+91 7324907150</a>
+              </span>
             </div>
             <div className="bg-slate-100 w-[1px] h-4 mx-4"></div>
             <div className="flex items-center text-white text-sm">
               <MdEmail className="me-3 max-sm:me-0" size={20} />
               <span className="max-sm:hidden">Email: &nbsp;</span>
               <span className="font-bold max-sm:hidden">
-                info@apversion.com
+                <a href="mailto:info@apversion.com">info@apversion.com</a>
               </span>
             </div>
           </div>
@@ -119,10 +121,10 @@ const NavBar = () => {
                 })}
               </div>
               <div>
-              <ModeToggle />
+                <ModeToggle />
               </div>
               <SheetDescription className="flex justify-center pt-5">
-              © 2024 AP Version Paint Industry.
+                © 2024 AP Version Paint Industry.
               </SheetDescription>
             </SheetHeader>
           </SheetContent>

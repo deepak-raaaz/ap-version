@@ -5,6 +5,7 @@ import Blog from './pages/blog/Blog';
 import BlogView from './pages/blogview/BlogView';
 import Products from './pages/products/Products';
 import About from './pages/about/About';
+import Contact from './pages/contact/Contact';
 function App() {
   return (
       <Routes >
@@ -15,6 +16,7 @@ function App() {
           <Route path="/blogs/:slug" element={<BlogView/>} />
           <Route path="/products" element={<Products/>} />
           <Route path="/about" element={<About/>} />
+          <Route path="/contact" element={<Contact/>} />
         </Route>
       </Routes>
   )

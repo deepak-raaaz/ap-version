@@ -89,6 +89,7 @@ module.exports = {
         'contact-image': "url('/src/assets/images/pattern-image.png')",
         'secondary-banner-image': "url('/src/assets/images/secondary-banner.png')",
         'circle-image': "url('/src/assets/images/circle.png')",
+        'about-us-banner-image': "url('/src/assets/images/about-us-banner-apversion.png')",
       },
       animation: {
         marquee: 'marquee 25s linear infinite',
@@ -106,6 +107,7 @@ module.exports = {
       },
       screens: {
         '900px' : '900px',
+        '560px' : '560px',
         '420px' : '420px'
       }
     },

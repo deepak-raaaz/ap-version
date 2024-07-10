@@ -11,8 +11,12 @@ import {
   BreadcrumbPage,
   BreadcrumbSeparator,
 } from "@/components/ui/breadcrumb";
+import { useEffect } from "react";
 
 const BlogView = () => {
+    useEffect(() => {
+        window.scrollTo(0, 0)
+      }, [])
   const { slug } = useParams();
   const blog = blogs.find((blog) => blog.slug === slug);
 
