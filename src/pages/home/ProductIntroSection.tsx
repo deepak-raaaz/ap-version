@@ -116,7 +116,7 @@ const ProductIntroSection = () => {
               <Carousel setApi={setApi}>
                 <CarouselContent>
                   {products.map((item) => (
-                    <CarouselItem>
+                    <CarouselItem key={item.id}>
                       <div className="w-full aspect-square flex items-center justify-center rounded-full overflow-hidden">
                         <img
                           src={item.images[0]}

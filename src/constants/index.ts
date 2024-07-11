@@ -46,12 +46,12 @@ export const socialLinks = [
   {
     icon: FaFacebookF,
     label: "Facebook",
-    url: "https://instagram.com/apversion",
+    url: "https://www.facebook.com/people/AP-Version-Paint-Industry/61554003027827/",
   },
   {
     icon: FaLinkedinIn,
     label: "LinkedIn",
-    url: "https://instagram.com/apversion",
+    url: "https://www.linkedin.com/in/ap-version-paint-industry-9667302a1/",
   },
   {
     icon: FaInstagram,
@@ -61,7 +61,7 @@ export const socialLinks = [
   {
     icon: FaPinterest,
     label: "Pinterest",
-    url: "https://instagram.com/apversion",
+    url: "https://in.pinterest.com/apversion/",
   },
 ];
 
