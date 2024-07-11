@@ -90,6 +90,7 @@ module.exports = {
         'secondary-banner-image': "url('/src/assets/images/secondary-banner.png')",
         'circle-image': "url('/src/assets/images/circle.png')",
         'about-us-banner-image': "url('/src/assets/images/about-us-banner-apversion.png')",
+        'about-us-banner-image-dark': "url('/src/assets/images/about-us-banner-apversion-dark.png')",
       },
       animation: {
         marquee: 'marquee 25s linear infinite',

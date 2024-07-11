@@ -55,9 +55,9 @@ const BlogCard = ({
           </Badge>
         ))}
       </div>
-      <h2 className="text-lg font-semibold mx-2 !mt-2">{title}</h2>
-      <p className="text-slate-700 mx-2 dark:text-slate-500">
-        {description} {slug}
+      <h2 className="text-lg font-semibold mx-2 !mt-2 line-clamp-2">{title}</h2>
+      <p className="text-slate-700 mx-2 dark:text-slate-500 line-clamp-4">
+        {description}
       </p>
       <div className="flex justify-end mx-2">
         <Link to={linkTo}>

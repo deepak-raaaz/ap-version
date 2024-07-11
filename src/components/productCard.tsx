@@ -42,7 +42,7 @@ const ProductCard = ({title,images,availableWeight,id}:Props) => {
 
   return (
     <div className="relative group" data-aos="flip-left">
-      <div className="border-slate-300 dark:border-slate-600 border-2 group-hover:border-brand-primary dark:group-hover:border-brand-darkPrimary group-hover:border-3 transition duration-300 rounded-lg pt-8 pb-10 px-4 flex flex-col items-center">
+      <div className="border-slate-300 dark:border-slate-800 border-2 group-hover:border-brand-primary dark:group-hover:border-brand-darkPrimary group-hover:border-3 transition duration-300 rounded-lg pt-8 pb-10 px-4 flex flex-col items-center">
         <img
           src={images[0]}
           alt=""

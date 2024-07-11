@@ -42,8 +42,9 @@ const Contact = () => {
           </Link>
         </h1>
       </div>
-      <div className="flex">
-        {instagramData &&
+      <div className="relative flex overflow-hidden w-full">
+          <div className=" animate-marquee whitespace-nowrap flex">
+          {instagramData &&
           instagramData.map((post, index) => (
             <Link key={index} to={post.post_url} className="h-60 aspect-square">
               <img
@@ -54,7 +55,23 @@ const Contact = () => {
               />
             </Link>
           ))}
-      </div>
+          </div>
+
+          <div className="absolute top-0 animate-marquee2 whitespace-nowrap flex">
+          {instagramData &&
+          instagramData.map((post, index) => (
+            <Link key={index} to={post.post_url} className="h-60 aspect-square">
+              <img
+                data-aos="zoom-in"
+                src={post.image_url}
+                alt=""
+                className="h-60 aspect-square border"
+              />
+            </Link>
+          ))}
+          </div>
+        </div>
+
     </section>
   );
 };

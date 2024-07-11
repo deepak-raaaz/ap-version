@@ -26,7 +26,7 @@ const About = () => {
             <h2 className="text-2xl font-bold text-center ">
               AP Version paint Industry
             </h2>
-            <p className="w-[70%] text-center mb-4 text-slate-700 max-md:w-[90%]">
+            <p className="w-[70%] text-center mb-4 text-slate-700 dark:text-slate-400 max-md:w-[90%]">
               Welcome to <strong>AP Version Paint Industry!</strong> Established on May 8, 2023,
               we are a dynamic and growing company in the wall putty and white
               cement industry, proudly located in Patna, Bihar.
@@ -96,7 +96,7 @@ const About = () => {
       <div className="w-full py-6 flex justify-center h-[18rem] max-sm:h-[8rem] relative bg-slate-800 mt-32 ">
         <div
           data-aos="fade-up"
-          className="w-full mx-4 max-w-xl aspect-video bg-slate-300 absolute -top-32 max-sm:w-[90%] bg-about-us-banner-image bg-contain"
+          className="w-full mx-4 max-w-xl aspect-video bg-slate-300 absolute -top-32 max-sm:w-[90%] bg-about-us-banner-image dark:bg-about-us-banner-image-dark bg-contain"
         >
 
         </div>

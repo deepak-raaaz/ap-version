@@ -14,9 +14,9 @@ import {
 import { useEffect } from "react";
 
 const BlogView = () => {
-    useEffect(() => {
-        window.scrollTo(0, 0)
-      }, [])
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   const { slug } = useParams();
   const blog = blogs.find((blog) => blog.slug === slug);
 
@@ -46,7 +46,7 @@ const BlogView = () => {
     },
   };
   return (
-    <section className="max-w-screen-xl mx-auto max-xl:mx-4 pb-10 flex items-center flex-col space-y-3 pt-32 max-lg:pt-1 ">
+    <div className="max-w-screen-xl mx-auto max-xl:mx-4 pb-10 flex items-center flex-col space-y-3 pt-32 max-lg:pt-1 ">
       <div className="w-full px-3">
         <Breadcrumb>
           <BreadcrumbList>
@@ -69,8 +69,8 @@ const BlogView = () => {
         </Breadcrumb>
       </div>
       <div className="w-full grid grid-cols-6 gap-5">
-        <div className="col-span-4 max-lg:col-span-6">
-          <div className="relative">
+        <article className="col-span-4 max-lg:col-span-6">
+          <header className="relative">
             <img
               src={blog.thumbnail}
               alt=""
@@ -86,43 +86,31 @@ const BlogView = () => {
                 </span>
               </div>
             </div>
-          </div>
+          </header>
           <div className="m-3 flex text-slate-500 space-x-2 items-center my-5">
             <IoPerson />
-            <span className="text-sm font-medium">
-              AP Version Paint Industry
+            <span className="text-sm font-medium capitalize">
+              {blog.author}
             </span>
           </div>
-          <div className="m-3">
-            <p className="">
-              {blog.content} Lorem ipsum dolor sit amet consectetur adipisicing
-              elit. Quod corporis esse nihil, eaque dolore, commodi beatae
-              dignissimos consectetur iusto adipisci magnam illum temporibus
-              aspernatur? Iure, ipsam perspiciatis maxime temporibus dolores
-              tempore sed amet. Veniam dignissimos a nobis nemo labore animi
-              distinctio vero. Id aperiam non exercitationem placeat pariatur
-              fugit ea enim sunt aspernatur eius et omnis nulla quas modi nihil,
-              ipsa magnam consequuntur veritatis! Voluptate dolore nostrum
-              mollitia quibusdam debitis saepe blanditiis ipsam ullam amet
-              cumque molestias perspiciatis, repudiandae vitae? Vitae doloribus
-              tempore ad nobis a aperiam ipsum quos adipisci dolor laborum nam,
-              inventore exercitationem sint! Dolor repudiandae nobis error.
-            </p>
+            <div
+              className="text-slate-600 dark:text-slate-500 mt-2"
+              dangerouslySetInnerHTML={{ __html: blog.content }}
+            ></div>
             <div className="flex items-center space-x-3">
               <span>Tags : </span>
-              <div className="flex space-x-2 my-2 mx-1 ">
+              <div className="flex space-x-2 my-4 mx-1 ">
                 {blog.tags.map((tag) => (
                   <Badge
                     key={tag}
                     variant="outline"
-                    className="text-slate-600 px-3 py-2"
+                    className="text-slate-600 px-3 py-2 dark:text-slate-400"
                   >
                     {tag}
                   </Badge>
                 ))}
               </div>
             </div>
-          </div>
           <div className="w-full h-[1px] bg-slate-300 mt-7 dark:bg-slate-800"></div>
           {/* social share buttons  */}
           <div className="w-full my-6">
@@ -133,14 +121,14 @@ const BlogView = () => {
               style={style}
             />
           </div>
-        </div>
+        </article>
 
         {/* Recent blogs list  */}
         <div className="col-span-2 max-lg:col-span-6 ">
           <div className="border-s-4 border-brand-primary  py-1 mb-2 px-3">
             <h1 className="font-semibold">Recent Blogs</h1>
           </div>
-          {blogs.slice(-5).reverse().map((item) => (
+          {blogs.reverse().map((item) => (
             <Link to={`../blogs/${item.slug}`}>
               <div className="border-slate-300 dark:border-slate-800 space-x-3 grid grid-cols-3 py-3 border-b cursor-pointer">
                 <img
@@ -161,7 +149,7 @@ const BlogView = () => {
           ))}
         </div>
       </div>
-    </section>
+    </div>
   );
 };
 

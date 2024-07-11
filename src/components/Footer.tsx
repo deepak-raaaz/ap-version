@@ -1,22 +1,27 @@
 import { Link } from "react-router-dom";
 import Logo from "../assets/images/logo-horizontal.png";
+import DarkLogo from "../assets/images/dark-logo.png"
 import { FaPhone } from "react-icons/fa6";
 import { socialLinks } from "@/constants";
+import { useTheme } from "./theme-provider";
 
 const Footer = () => {
+  const { theme } = useTheme()
   return (
     <footer className="max-w-screen-xl mx-auto max-xl:mx-4 py-10 ">
       <div className="grid grid-cols-4 gap-4 max-md:grid-cols-2 max-sm:grid-cols-1 max-sm:gap-6 ">
         <div>
-          <img src={Logo} alt="" className="h-10" />
+          <img src={theme === "light" ? Logo : DarkLogo} alt="" className="h-10" />
           <p className="my-3">
             🔆 Smooth walls, Smooth life
             <br />⚡ High-quality wall putty and white cement.
           </p>
+          <a href="tel:+917324907150">
           <span className="flex items-center font-semibold text-slate-600">
             <FaPhone className="me-3 text-blue-500" />
             +91 7324907150
           </span>
+          </a>
         </div>
         <div>
           <ul className="space-y-2">
@@ -27,9 +32,6 @@ const Footer = () => {
             <li className="text-slate-500 hover:cursor-pointer hover:text-slate-800 dark:hover:text-slate-300">
               <Link to="/contact">Contact & Support</Link>
             </li>
-            <li className="text-slate-500 hover:cursor-pointer hover:text-slate-800 dark:hover:text-slate-300">
-              <Link to="/privacy-policy">Privacy Policy</Link>
-            </li>
           </ul>
         </div>
 
@@ -37,13 +39,10 @@ const Footer = () => {
           <ul className="space-y-2">
             <th>Quick Links</th>
             <li className="text-slate-500 hover:cursor-pointer hover:text-slate-800 dark:hover:text-slate-300">
-              <Link to="/about">Call Support</Link>
+              <a href="tel:+917324907150">Call Support</a>
             </li>
             <li className="text-slate-500 hover:cursor-pointer hover:text-slate-800 dark:hover:text-slate-300">
-              <Link to="/contact">Our Services</Link>
-            </li>
-            <li className="text-slate-500 hover:cursor-pointer hover:text-slate-800 dark:hover:text-slate-300">
-              <Link to="/privacy-policy">Know Our Team</Link>
+            <a href="mailto:info@apversion.com">Mail support</a>
             </li>
           </ul>
         </div>

@@ -1,4 +1,5 @@
 import LogoImg from "../assets/images/logo-horizontal.png";
+import DarkLogoImg from "../assets/images/dark-logo.png";
 import { Link, useLocation } from "react-router-dom";
 import { navBarLinks, socialLinks } from "@/constants";
 import { cn } from "@/lib/utils";
@@ -14,10 +15,12 @@ import {
 import { FaPhoneAlt } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import { BiMenu } from "react-icons/bi";
+import { useTheme } from "./theme-provider";
 
 const NavBar = () => {
   let location = useLocation();
   const pathname = location.pathname;
+  const { theme } = useTheme();
 
   return (
     <nav className="w-full lg:absolute top-0 z-50 ">
@@ -60,7 +63,7 @@ const NavBar = () => {
       {/* main nav bar  */}
       <div className="max-w-screen-xl mx-auto max-xl:mx-4 py-3 flex justify-between items-center ">
         <img
-          src={LogoImg}
+          src={theme === "light" ? LogoImg : DarkLogoImg}
           alt="AP Version Paint Industry Logo"
           className="w-60 max-lg:w-48"
         />
